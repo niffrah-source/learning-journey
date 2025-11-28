@@ -6,8 +6,31 @@
     background-color: #b4cad5;
 }
 .calculator{
+    width: 350px;
     background-color: #e6e6e6;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.calculator input{
+    width: 150px;
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-align: right;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.calculator button{
+    width: 60px;
+    height: 60px;
+    margin: 1%;
+    font-size: 18px;
+    border-radius: 50%;
+    background-color: #a7e0a9;
+    color: white;
+        box-shadow: 0 4px 6px rgba(199, 118, 118, 0.1);
+    cursor: pointer;
+    border: none;
 }
