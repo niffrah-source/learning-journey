@@ -1,41 +1,88 @@
 body{
+    background: linear-gradient(to right , #664a3d, #f5b077);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #b4cad5;
-    margin: 0;
+    font-family: Arial, sans-serif;
 }
-.calculator{
-    width: 400px;
-    background-color: white;
+.calc-body{
+    background-color:#5e4230;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 298px;
+    height: 550px;
+}
+/* .calc-screen , .display{
     
+    border-radius: 6%;
+    width: 258px;
+    height: 140px;
+    background-color: #5e4230;
+
+    margin-bottom: 20px;
+} */
+ .calc-screen {
+    border-radius: 6%;
+    width: 290px;
+    height: 160px;
+    background-color: #5e4230;
+    margin-bottom: 20px;
+
+    display: flex;               /* make flex container */
+    justify-content: center;     /* center horizontally */
+    align-items: center;         /* center vertically */
 }
-.calculator input{
-    width: 100%;
-    height: 60px;
-    font-size: 24px;
+
+.display {
+    width: 90%;             
+    height: 60%;            
+    background-color: #cea78c;
+    border-radius: 20px;
+    font-size: 32px;
+    font-weight: bold;
     text-align: right;
-    margin-bottom: 10px;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-
- button{
-    width: 70px;
-    height: 70px;
-    font-size: 18px;
-    margin: 1%;
     border: none;
-    border-radius: 50%;
-    background-color: #a4e7ca;
-    cursor: pointer;
+box-sizing: border-box;
+padding-right: 15px;
+padding-left: 10px;
+    margin: 0;                 
+    display: block;            
 }
-.calculator button:hover{
-    background-color: #e0e0e0;
+   
+
+.btn{
+    height: 60px;
+    width: 60px;
+    margin: 5px;
+    border-radius: 50%;
+    font-size: 25px;
+    background-color: #f5b077;
+    border: none;
+    box-shadow: 0 4px 6px rgba(199, 118, 118, 0.1);
+    cursor: pointer;
+    font-weight: 700;
+}
+#clear , #DEL  , #percentage{
+    background-color:#a07260;
+
+}
+button[data-value="0"],
+button[data-value="1"],
+button[data-value="2"],
+button[data-value="3"],
+button[data-value="4"],
+button[data-value="5"],
+button[data-value="6"],
+button[data-value="7"],
+button[data-value="8"],
+button[data-value="9"] ,#decimal{
+    
+   
+  background-color:#f3ad94; 
+}
+button:active {
+  transform: scale(0.92);   
 }
