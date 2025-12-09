@@ -86,3 +86,6 @@ button[data-value="9"] ,#decimal{
 button:active {
   transform: scale(0.92);   
 }
+buutton .hello{
+    background-color: red;
+}
